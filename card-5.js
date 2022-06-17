@@ -1,3 +1,4 @@
+const card5Content = `
 <header>
 
 	<h2>Green Card</h2>
@@ -27,3 +28,6 @@
 <nav>
 	<a id="card_close" name-SVGKit="svg_close">Close</a>
 </nav>
+`
+
+$('#card-5-section').prepend(card5Content);

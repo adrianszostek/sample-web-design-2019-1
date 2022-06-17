@@ -1,3 +1,4 @@
+const unpackedContent = `
 <header style="background-image: linear-gradient(calc(360deg - 45deg - 180deg), #65b4d8, #fffab5); color: white;">
 	<h2>Big Card</h2>
 	<p>Gradient</p>
@@ -244,3 +245,6 @@
 <nav>
 	<a id="card_close" name-SVGKit="svg_close">Close</a>
 </nav>
+`
+
+$('#unpacked-section').prepend(unpackedContent);

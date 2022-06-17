@@ -14,8 +14,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body class="home dark">
-		<?php include("_tech/SVGKit.php"); ?>
 
+		<div id="SVGKit-section"></div>
 
 		<header>
 			<h2>Web Launcher (early version)</h2>
@@ -23,32 +23,26 @@
 				<a id="theme" name-SVGKit="svg_theme">Light theme</a>
 			</nav>
 		</header>
-		<section id="launcher">
-				<?php include("Web Launcher.php"); ?>
-		</section>
+
+
+		<section id="launcher"></section>
 
 
 		<header>
 			<h2>Cards</h2>
 		</header>
 		<section id="cards">
-			<figure class="unpacked maxi" name-color-palette="polar">
-				<?php include("Unpacked.php"); ?>
+			<figure id="unpacked-section" class="unpacked maxi" name-color-palette="polar">
 			</figure>
-			<figure class="initiative semi" name-color-palette="azure">
-				<?php include("card-1.php"); ?>
+			<figure id="card-1-section" class="initiative semi" name-color-palette="azure">
 			</figure>
-			<figure class="initiative semi" name-color-palette="amber">
-				<?php include("card-2.php"); ?>
+			<figure id="card-2-section" class="initiative semi" name-color-palette="amber">
 			</figure>
-			<figure class="initiative semi" name-color-palette="ultramarine">
-				<?php include("card-3.php"); ?>
+			<figure id="card-3-section" class="initiative semi" name-color-palette="ultramarine">
 			</figure>
-			<figure class="initiative semi" name-color-palette="red">
-				<?php include("card-4.php"); ?>
+			<figure id="card-4-section" class="initiative semi" name-color-palette="red">
 			</figure>
-			<figure class="initiative semi" name-color-palette="avocado">
-				<?php include("card-5.php"); ?>
+			<figure id="card-5-section" class="initiative semi" name-color-palette="avocado">
 			</figure>
 			<a href="#" class="semi">
 				<header style="background-image: url('_covers/components.svg'); ">
@@ -61,7 +55,17 @@
 				</header>
 			</a>
 		</section>
-		
+
+		<script src="./_tech/SVGKit.js"></script>
+		<script src="WebLauncher.js"></script>
+		<script src="Unpacked.js"></script>
+		<script src="card-1.js"></script>
+		<script src="card-2.js"></script>
+		<script src="card-3.js"></script>
+		<script src="card-4.js"></script>
+		<script src="card-5.js"></script>
+
+		<script src="_tech/append.js"></script>
+
 	</body>
-	<script src="_tech/append.js"></script>
 </html>

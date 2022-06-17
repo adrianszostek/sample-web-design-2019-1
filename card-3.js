@@ -1,3 +1,4 @@
+const card3Content = `
 <header>
 	
 	<h2>Azure Card</h2>
@@ -46,3 +47,7 @@
 	<a id="card_close" name-SVGKit="svg_close">Close</a>
 </nav>
 	
+
+`
+
+$('#card-3-section').prepend(card3Content);

@@ -1,0 +1,91 @@
+/* Standard plugins */
+
+	figure { margin: 0; }
+	
+	svg { min-width: 24px; max-width: 24px; min-height: 24px; max-height: 24px; transform: scale(calc(14 / 24)); margin: -5px; }
+	svg > * { fill: var(--c6); }
+
+	section { position: relative; width: 100vw; box-sizing: border-box; float: left; padding: 8px var(--spacing) calc(var(--spacing) / 2) var(--spacing); }
+	body > section:first-of-type { margin-top: 72px; }
+
+	.box, .buttons_1, .tile2, .buttons, .gallery, .table, section.content > .table, section.content > .gallery { margin: 16px -24px; max-width: 848px; /*background-color: var(--c0);*/ border-radius: 4px; /*box-shadow: var(--low);*/ border: 1px solid var(--c5); box-sizing: border-box; /*transition: box-shadow 300ms var(--easing);*/ }
+/*
+	.box:active, .table:hover, .gallery:hover, .buttons:hover { box-shadow: var(--low); }
+*/
+	
+	.table::-webkit-scrollbar { background: transparent; height: 16px; width: auto; }
+	.table::-webkit-scrollbar-thumb { background: linear-gradient(to bottom, transparent 4px, var(--c6) 4px, var(--c6) 12px, transparent 12px); }
+
+
+
+/* Gallery 2 */
+
+	.gallery { display: flex; overflow-x: auto; overflow-y: hidden; position: relative; }
+	.gallery > figure { min-width: 100%; padding: 16px 24px 64px 24px; box-sizing: border-box; }
+	.gallery > figure img { width: 100%; float: left; }
+	.gallery *::selection { background: none; }
+	.gallery > figure div { padding: 16px 24px 16px 62px; height: 60px; width: 100%; position: relative; box-sizing: border-box; background: var(--c1); float: left; transition: height 350ms var(--easing), margin 350ms var(--easing); border-radius: 4px 4px 0 0; margin-top: -4px; }
+	.gallery > figure a { width: 48px; height: 48px; border-radius: 24px; display: inline-flex; margin: -10px 7px 0 -55px; justify-content: center; align-items: center; transition: background 200ms var(--easing); float: left; cursor: pointer; }
+	.gallery > figure a svg { transform: scale(calc(12 / 24)) rotate(180deg); transition: transform 350ms var(--easing); }
+	.gallery > figure a:hover { background: var(--c2); }
+	.gallery > figure a:active { background: var(--c3); }
+	.gallery > figure a.pictures_description_opened svg { transform: scale(calc(12 / 24)); }
+	.gallery > figure h4 { display: inline; padding-right: 4px; }
+	.gallery ul, .gallery ol { padding: 0; }
+	.gallery::-webkit-scrollbar { height: 0; }
+
+	.gallery.pictures > figure { padding: 0 0 48px 0; }
+	.gallery.pictures > figure p { opacity: 0; display: inline; position: relative; top: 8px; transition: opacity 200ms var(--easing), top 200ms var(--easing); }
+	.gallery.pictures > figure h1 { display: inline; padding-right: 4px; float: left; }
+	.gallery.pictures > figure .pictures_description p { opacity: 1; top: 0; }
+	
+
+	.control { position: relative; height: 46px; background: var(--c1); border: 1px solid var(--c5); cursor: pointer; transform: translate(-24px,-40px); width: 846px; z-index: 10; display: flex; margin: -24px 0; border-radius: 0 0 4px 4px; overflow: hidden; }
+	.control > a { width: 50%; height: 100%; display: flex; padding: 0 24px; justify-content: space-between; align-items: center; transition: background 200ms var(--easing); }
+	.control > a.prev { border-right: 1px solid var(--c5); }
+	.control *::selection { background: none; }
+	.control > a:hover { background: var(--c2); }
+	.control > a:active { background: var(--c3); }
+	.control > a > div { display: flex; }
+	.control svg { transform: scale(calc(12 / 24)); }
+
+
+/* Table */
+
+	.table { overflow-y: auto; display: flex; flex-direction: column; align-items: baseline; text-align: center; }
+	.table > div { display: flex; transition: background 300ms var(--easing); }
+	.table > div:hover { background: var(--c2); }
+	.table > div:first-of-type  { font-family: Bold; }
+	.table > div:first-of-type > p { border-bottom: 1px solid var(--c5); }
+	.table > div > p { min-width: 208px; box-sizing: border-box; padding: 16px 24px; display: flex; justify-content: center; align-items: center; flex: 1; }
+	.table > div > p:first-of-type { justify-content: flex-start; }
+	.table > div.hr { border-top: 1px solid var(--c3); }
+	
+	.table::-webkit-scrollbar-button { width: 12px; }
+	.table::-webkit-scrollbar-thumb {  background: var(--c5); }
+
+
+/* Buttons Card */
+
+	.buttons { display: flex; flex-direction: column; /*margin: 16px -24px 16px 16px;*/ padding: 8px 0; transition: box-shadow 300ms var(--easing); width: 256px; float: right; }
+	.buttons:active { box-shadow: var(--high); }
+	.buttons > a { display: block; padding: 16px 24px; transition: background 300ms var(--easing), box-shadow 300ms var(--easing), border-radius 300ms var(--easing), padding 300ms var(--easing), margin 300ms var(--easing); position: relative; z-index: 20; }
+	.buttons > a:hover { background: var(--c3); z-index: 21; }
+	.buttons > a:active { margin: -8px 0; padding: 24px; }
+
+
+/* Block of code */
+
+	pre { background-color: var(--c0); border-radius: 4px; max-width: 848px; margin: 16px -24px; padding: 24px; box-sizing: border-box; }
+
+
+/* Timeline */
+
+	#timeline { width: 100%; height: 8px; border-radius: 4px; background: var(--ultramarine); position: relative; margin: 80px 0; }
+	#timeline div.event { width: 24px; height: 24px; margin: -8px 0 -8px -12px; /* przesunięcie na właściwą datę */ position: absolute; border-radius: 12px; background: var(--ultramarine); box-shadow: var(--shadow-1); z-index: 11; }
+	#timeline div.event:after { content: ''; display: block; position: relative; top: 8px; left: 8px; width: 8px; height: 8px; background: var(--c0); border-radius: 8px; box-shadow: inset var(--shadow-1); }
+	#timeline span.label { line-height: 20px; position: absolute; top: -80px; padding: 8px; background: var(--c2); border-radius: 4px; text-align: center; box-sizing: border-box; z-index: 10; }
+	#timeline span.label:after { content: ''; display: block; width: 8px; height: 18px; position: absolute; left: calc(50% - 4px); bottom: -18px; background: var(--c2); z-index: 10; }
+	#timeline span.label.bottom { top: 32px; }
+	#timeline span.label.bottom:after { top: -18px; }
+	#timeline div.month { width: 8px; height: 24px; margin: -8px 0 0 -4px; /* przesunięcie na właściwą datę */ position: absolute; border-radius: 4px; background: var(--ultramarine); }

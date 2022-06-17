@@ -1,0 +1,173 @@
+/* Color system */
+
+	body {
+		background: var(--c0);	
+		color: var(--c6);
+	
+	/* Polar Design Landscape View language shadows */
+	
+		--shadow-1: 0 0 4px 0 rgba(0,0,0,0.3);
+		--shadow-2: 0 0 8px 0 rgba(0,0,0,0.3);
+		--shadow-3: 0 0 16px 0 rgba(0,0,0,0.4);
+		--shadow-4: 0 0 24px 0 rgba(0,0,0,0.5);
+	
+	/* Polar Design Product language colours */
+	
+		--polar: #3F51B5;
+		--polar-dark: #303F9F;
+		--polar-black: #1A237E;
+	
+		--azure: #2196f3;
+		--azure-dark: #1976d2;
+		--azure-black: #0d47a1;
+	
+		--amber: #FFC107;
+		--amber-dark: #FFA000;
+		--amber-black: #FF6F00;
+	
+		--ultramarine: #448aff;
+		--ultramarine-dark: #2979ff;
+		--ultramarine-black: #2962Ff;
+	
+		--avocado: #4caf50;
+		--avocado-dark: #388e3c;
+		--avocado-black: #1b5e20;
+	
+		--cyan: #00BCD4;
+		--cyan-dark: #0097A7;
+		--cyan-black: #006064;
+	
+		--red: #F44336;
+		--red-dark: #D32F2F;
+		--red-black: #B71C1C;
+	
+		--neworange: rgb(0, 122, 255);
+	}
+	
+	body.dark {
+		
+		--c0: black;
+		
+		--c1: #2b2b2b;
+		--c2: #363636;
+		--c3: #424242;
+		--c4: #4d4d4d;
+		--c5: #575757;
+	
+		--c6: white;
+	}
+		
+	
+	body.light {
+		
+		--c0: white;
+		
+		--c1: #f7f7f7;
+		--c2: #f0f0f0;
+		--c3: #e8e8e8;
+		--c4: #e0e0e0;
+		--c5: #d9d9d9;
+	
+		--c6: #575757;
+	}
+		
+		body.dark > header:not(.current) { color: var(--c6); } 
+		body.light > header:not(.current) { color: var(--polar); }
+	
+		body.fullscreen.light > header.current, body.fullscreen.dark > header.current { background: black; box-shadow: none; }
+	
+		a {	color: var(--c6); }
+		
+		[name-color-palette="polar"] {
+			--color: #3F51B5;
+			--dark: #303F9F;
+			--black: #1A237E; }
+		
+		[name-color-palette="azure"] {
+			--color: #2196f3;
+			--dark: #1976d2;
+			--black: #0d47a1; }
+		
+		[name-color-palette="amber"] {
+			--color: #FFC107;
+			--dark: #FFA000;
+			--black: #FF6F00; }
+		
+		[name-color-palette="ultramarine"] {
+			--color: #448aff;
+			--dark: #2979ff;
+			--black: #2962FF; }
+		
+		[name-color-palette="avocado"] {
+			--color: #4caf50;
+			--dark: #388e3c;
+			--black: #1b5e20; }
+		
+		[name-color-palette="cyan"] {
+			--color: #00BCD4;
+			--dark: #0097A7;
+			--black: #006064; }
+		
+		[name-color-palette="red"] {
+			--color: #F44336;
+			--dark: #D32F2F;
+			--black: #B71C1C; }
+		
+
+/* Font system */
+
+	/* Roboto Condensed font family	*/
+	
+		@font-face {
+			font-family: bold;
+			src: url(fonts/RobotoCondensed-Bold.ttf); }    
+	
+		@font-face {
+			font-family: regular;
+			src: url(fonts/RobotoCondensed-Regular.ttf); }    
+	
+		@font-face {
+			font-family: light;
+			src: url(fonts/RobotoCondensed-Light.ttf); }
+		
+		h1, h2, h3, h4, p, span { font-weight: 500; padding: 0; margin: 0; }
+		
+		p, li { font: 1em/1.75em regular; }
+	
+		h1 { font: 6em/1 light; }
+		h2 { font: 1.375em/2.0625em light; }
+		h3 { font: 1.25em/1.875em bold; }
+		h4 { font: 1em/1.75em bold; }
+	
+		a { font: 1em/1.75em regular; text-decoration: none; }
+
+	/* Lists */
+	
+		li  { margin-left: 24px; } ol, ul { padding: 0 0 8px 24px; margin: 8px 0 8px 16px; }
+
+	/* Small link */
+	
+		body {
+		font-size: 100%;
+		--small-a: 0.75em/1.125em bold;
+		}
+
+
+/* Transition system */
+
+	/* Easings */
+	
+		body {
+		
+		   	--easing: cubic-bezier(.4,0,.2,1);
+	
+		}
+		
+	/* Animations */
+	
+		@keyframes appear {
+			from { opacity: 0; } }
+				
+		@keyframes disappear {
+			to { opacity: 0; } }
+	

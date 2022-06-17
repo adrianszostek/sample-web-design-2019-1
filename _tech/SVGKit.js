@@ -1,3 +1,4 @@
+const content = `
 <div id="SVGKit">
 	<!--prev-->
 	<svg class="svg_prev">
@@ -91,5 +92,8 @@
 </div>
 <style>
 	#SVGKit { display: none; }
-</style>
+</style>`
 
+
+
+$('#SVGKit-section').prepend(content);

@@ -16,37 +16,37 @@ const card2Content = `
 		
 			<div class="gallery pictures">
 				<figure>
-					<img src="_sample.png">
+					<img src="sample.png">
 					<h4>First thing</h4>
 					<p>si  iudices obcaecati arcu perversis. Sapiente proice w innovare ad 8. O vacans recognoverunt accumsan usus SE quo maiestatis FeceRunt.<br>
 					Hungariae nibh dolor ab iusto utrumquełeu płparum potens ea iriure harum inmcem, ea exequi qui mus benevolam aegrotus.<br>
 					Loquor o accelerare nobili apponemus culpa ultimae lorem, exłhaeres dicit nemine s amandi suspendisse. Quas posuere quasiła supponebant guberniumłdebetur v perditio mariae indolem.</p>
 				</figure>
 				<figure>
-					<img src="_sample.png">
+					<img src="sample.png">
 					<h4>Second thing</h4>
 					<p>lius gloriose nam w włsubsequi supponendo. D fuga exłea moderno łnunc nemo a caduca dimittere.<br>
 					<p>Metenda hectorem łeros ac caesariani superue exło versus eorumłea, est me vel sensim aut aut semper.<br>
 					<p>P morsumłquia floret extremis adłat m urna lectorum regulantur. Słullam accelerare aut eu regiae m quae domesticas quasłquas s Cras Ferient.</p>
 				</figure>
 				<figure>
-					<img src="_sample.png">
+					<img src="sample.png">
 					<h4>Third thing</h4>
 					<p>te culpa decembris nominum ea contemptum deesse, nobis sangvine mi est vero species. Se urna inauguratus nisi prandium ad 4.<br>
 					<p>Lacusłnec nactus, rem in dolor regiaełv innumeros ullimus mattis, w subsequi estł dui legere, ałparum a consulta alexander.</p>
 				</figure>
 				<figure>
-					<img src="_sample.png">
+					<img src="sample.png">
 					<h4>Fourth thing</h4>
 					<p>lius vergit varius crabrones w erat aenean contra. Primumłs vero sedł lacaenae ea caesarianis excessivos mercede, d fames ad eminentiam accesserunt taediosum d vestra peripateticorum genere.</p>
 				</figure>
 				<figure>
-					<img src="_sample.png">
+					<img src="sample.png">
 					<h4>Fifth thing</h4>
 					<p>et erosemłe maiori mentes w protestor. Bonuni leo urna calumniatores instabimus subvenire, ad saevire nemine facunda iniunctum regnandi.</p>
 				</figure>
 				<figure>
-					<img src="_sample.png">
+					<img src="sample.png">
 					<h4>Sixth thing</h4>
 					<p>te proditorem romanorum mortis pectori, eumłiactura gubernium praecedentibus, elucescunt w fallaciloquae.</p>
 				</figure>

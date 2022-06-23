@@ -31,7 +31,7 @@ $(window).on("load", function(){
 		card_name = $("#cards > figure.initiative").eq(i).find("header > h2").text();
 		console.log(card_name);
 		//$("#cards > figure > header > span > *").eq(i).appendTo('<p></p>');
-		$("#cards > figure.initiative").eq(i).children("header").css({ 'background-image': "url('_covers/" + card_name + ".svg')" });
+		$("#cards > figure.initiative").eq(i).children("header").css({ 'background-image': "url('covers/" + card_name + ".svg')" });
 		$("#cards > figure.initiative").eq(i).children("header").append('<h1>' + card_name + '</h1>');
 	}
 	$(".conference > header").css({ background: $(".conference").find("h1:first-of-type").css("background-image"), color: $(".conference").find("h1:first-of-type").css("color") });
